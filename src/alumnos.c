@@ -25,6 +25,11 @@
 
 /*=====[Definitions of public global variables]==============================*/
 
+/**
+ * @brief Constante con los datos del alumno Luis Storaccio
+ * 
+ */
+
 static const struct alumno_s LUIS_STORACCIO = {
     .apellidos = "STORACCIO",
     .nombres = "Luis Sebastián",

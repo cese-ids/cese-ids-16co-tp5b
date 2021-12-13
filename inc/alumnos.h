@@ -29,6 +29,11 @@ extern "C" {
 
 /*=====[Definitions of public data types]====================================*/
 
+/**
+ * @brief Definición de la estructura alumno
+ * 
+ */
+
 typedef struct alumno_s {
     char apellidos[30];
     char nombres[30];
@@ -39,7 +44,26 @@ typedef struct alumno_s {
 
 /*=====[Prototypes (declarations) of public functions]=======================*/
 
+/**
+ * @brief SerializarAlumno es una función que devuelve la cantidad de caracteres que posee la estructura alumno
+ * 
+ * @param cadena 
+ * @param espacio 
+ * @param alumno 
+ * @return true 
+ * @return false 
+ */
+
 bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno);
+
+/**
+ * @brief SerializarAlumnos es una función que devuelve la cantidad de carácteres que poseen las estructuras alumnos
+ * 
+ * @param cadena 
+ * @param espacio 
+ * @return true 
+ * @return false 
+ */
 
 bool SerializarAlumnos(char * cadena, size_t espacio);
 
